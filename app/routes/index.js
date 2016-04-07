@@ -20,5 +20,4 @@ module.exports = function (app, db) {
     app.use(function (req, res) {   // default response for any other path
         res.status(400).send('Bad Request');
     });
-
 };

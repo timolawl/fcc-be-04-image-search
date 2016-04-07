@@ -3,7 +3,7 @@
 var CX = process.env.CX; // custom search engine id
 var API_KEY = process.env.API_KEY; // google api key
 var https = require('https'); // for processing the google search api call
-var querystring = require('querystring');
+var querystring = require('querystring'); // also a built in module
 
 function queryHandler (db) {
     var queries = db.collection('queries');
@@ -42,7 +42,6 @@ function queryHandler (db) {
                 queries.count(function (err, count) {
                     if (err) throw err;
 
-                    console.log(count);
                     if (count > 10) {
                         queries.findOneAndDelete({}, { sort: { when: 1 }}, function (err, doc) {
                             checkCount();

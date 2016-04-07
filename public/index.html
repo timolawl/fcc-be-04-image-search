@@ -2,14 +2,15 @@
 <html>
     <head>
         <title>Image Search Abstraction Layer</title>
-        <link rel='stylesheet' href='//fonts.googleapis.com/css?family=BenchNine|Open+Sans'>
+        <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Miltonian|Montserrat'>
         <link rel='stylesheet' type='text/css' href='/public/stylesheets/main.css'>
 
     </head>
     <body>
         <div class='wrapper'>
             <div class='image-search--title'>LoLCats</div>
-          <div class='image-search--subtitle'>Image Search Abstraction Layer</div>
+          <div class='image-search--catdiv'><img class='image-search--cat' src='/public/images/LoLCat.jpg' /></div>
+          <div class='image-search--subtitle'>Image Search Abstraction Layer Microservice</div>
             <div class='image-search__userstory'>
                 <div class='image-search__userstories--title'>User Stories:</div>
                 <div class='image-search__userstories--text'>
@@ -35,8 +36,8 @@
                 <div class='image-search__exampleoutput--title'>Example Output:</div>
                 <div class='image-search__exampleoutput--text'>
                     <ul>
-                        <li>Example entry (page displays 10 as an array): { "url": "http://data.whicdn.com/images/17561072/large.jpg", "snippet": "cat, funny, and marshmallow", "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCO7BmkKUwgNi-4qSy3wwgbhQA0ZYY0Qs-U0wS5cX3koIGU2fRP6k_BEU", "context":"http://weheartit.com/entry/17561072" }</li>
-                        <li>Example of a recent searche (page displays last 10): {"term":"lolcats funny","when":"2016-04-07T12:22:59.226Z"}</li>
+                      <li>Example item:<p>{<strong>"url"</strong>: "http://data.whicdn.com/images/17561072/large.jpg", <strong>"snippet"</strong>: "cat, funny, and marshmallow", <strong>"thumbnail"</strong>: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCO7BmkKUwgNi-4qSy3wwgbhQA0ZYY0Qs-U0wS5cX3koIGU2fRP6k_BEU", <strong>"context"</strong>:"http://weheartit.com/entry/17561072"}</p></li>
+                      <li>Example recent search item: <p>{<strong>"term"</strong>:"lolcats funny",<strong>"when"</strong>:"2016-04-07T12:22:59.226Z"}</p></li>
                     </ul>
                 </div>
             </div>
@@ -51,3 +52,5 @@
         </div>
     </body>
 </html>
+
+
