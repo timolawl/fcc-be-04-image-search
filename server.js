@@ -7,7 +7,7 @@ var express = require('express'),
 
 var app = express();
 
-var mongoURL = process.env.MONGOLAB_URI || 'mongodb://localhost:27017/timolawlurlshortener';
+var mongoURL = process.env.MONGOLAB_URI || 'mongodb://localhost:27017/timolawlimagesearch';
 
 mongo.connect(mongoURL, function(err, db) {
     if (err) {
