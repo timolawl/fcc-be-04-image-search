@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Search Abstraction Layer</title>
+        <link rel='stylesheet' href='//fonts.googleapis.com/css?family=BenchNine|Open+Sans'>
+        <link rel='stylesheet' type='text/css' href='/public/stylesheets/main.css'>
+
+    </head>
+    <body>
+        <div class='wrapper'>
+            <div class='image-search--title'>LoLCats</div>
+          <div class='image-search--subtitle'>Image Search Abstraction Layer</div>
+            <div class='image-search__userstory'>
+                <div class='image-search__userstories--title'>User Stories:</div>
+                <div class='image-search__userstories--text'>
+                    <ol>
+                        <li>I can get the image URLs, alternative text, and page URLs for a set of images relating to a given search string.</li>
+                        <li>I can paginate through the responses by adding a '?offset=' + single digit (e.g., ?offset=2) parameter to the URL.</li>
+                        <li>I can get a list of the most recently submitted search strings.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class='image-search__exampleusage'>
+                <div class='image-search__exampleusage--title'>Example Usage:</div>
+                <div class='image-search__exampleusage--text'>
+                    <ul>
+                        <li>Image search (e.g., lolcats funny): <a href='https://timolawl-image-search.herokuapp.com/api/imagesearch/lolcats funny?offset=10'>https://timolawl-image-search.herokuapp.com/api/imagesearch/lolcats funny?offset=10</a></li>
+                        <li>Recent searches: <a href='https://timolawl-image-search.herokuapp.com/api/latest'>https://timolawl-image-search.herokuapp.com/api/latest</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class='image-search__exampleoutput'>
+                <div class='image-search__exampleoutput--title'>Example Output:</div>
+                <div class='image-search__exampleoutput--text'>
+                    <ul>
+                        <li>Example entry (page displays 10 as an array): { "url": "http://data.whicdn.com/images/17561072/large.jpg", "snippet": "cat, funny, and marshmallow", "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCO7BmkKUwgNi-4qSy3wwgbhQA0ZYY0Qs-U0wS5cX3koIGU2fRP6k_BEU", "context":"http://weheartit.com/entry/17561072" }</li>
+                        <li>Example of a recent searche (page displays last 10): {"term":"lolcats funny","when":"2016-04-07T12:22:59.226Z"}</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class='footer'>
+                By <a href='https://timolawl.github.io'>Timolawl</a> |
+                <a href='https://twitter.com/timolawl'>Twitter</a> |
+                <a href='https://github.com/timolawl'>GitHub</a> |
+                <a href='https://codepen.io/timolawl'>Codepen</a> |
+                <a href='https://freecodecamp.com/timolawl'>Free Code Camp</a>
+            </div>
+        </div>
+    </body>
+</html>
