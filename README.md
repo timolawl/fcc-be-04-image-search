@@ -15,4 +15,4 @@ Check out the working app here: [https://timolawl-image-search.herokuapp.com](ht
 
 ##### Example output:
 * Example entry (page displays 10 as an array): { "url": "http://data.whicdn.com/images/17561072/large.jpg", "snippet": "cat, funny, and marshmallow", "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCO7BmkKUwgNi-4qSy3wwgbhQA0ZYY0Qs-U0wS5cX3koIGU2fRP6k_BEU", "context":"http://weheartit.com/entry/17561072" }
-* Example of a recent searche (page displays last 10): {"term":"lolcats funny","when":"2016-04-07T12:22:59.226Z"}
+* Example of a recent search (page displays last 10): {"term":"lolcats funny","when":"2016-04-07T12:22:59.226Z"}
