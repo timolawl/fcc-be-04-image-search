@@ -1,5 +1,4 @@
 node_modules/
-credentials.sh
 .eslintrc
 .env
 .DS_Store
